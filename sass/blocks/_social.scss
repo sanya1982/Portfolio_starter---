@@ -1,0 +1,26 @@
+.social {
+    position: absolute;
+    z-index: 1;
+    height: 338px;
+    width: 24px;
+    top: 225px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    &__divider {
+        width: 2px;
+        height: 70px;
+        background-color:#000000;
+    }
+    &__text {
+        width: 148px;
+        height: 148px;
+        transform: rotate(-90deg) translateY(63px);
+        font-weight: 700;
+        font-size: 16px;
+        color: #000000;
+        text-align: right;
+    }
+}
