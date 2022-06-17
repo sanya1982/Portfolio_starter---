@@ -1,0 +1,90 @@
+.menu {
+	position: fixed;
+	z-index: 10;
+	background-color: $main-color;
+	width: 345px;
+	height: 100vh;
+	padding-top: 140px;
+	padding-left: 40px;
+	&__list {
+		list-style-type: none;
+		li {
+			position: relative;
+			margin-top: 15px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 36px;
+			a {
+				color: #FFFFFF;
+				&::before {
+					content: '';
+					position: absolute;
+					top: 11px;
+					left: -35px;
+					width: 15px;
+					height: 15px;
+					border: 1px solid #000000;
+					border-radius: 100%;
+				}
+				&:hover {
+					color: #FFFFFF;
+					text-decoration: none;
+					&::before {
+					border: none;
+					background-color: #FFFFFF;
+					}
+				}
+			}
+		}
+	}
+	&__social {
+		position: absolute;
+		bottom: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 90px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		a {
+			&:hover {
+				svg {
+					path {
+						fill: #ffffff;
+					}
+				}
+			}
+		}
+	}
+}
+nav {
+	padding-left: 35px;
+}
+.close {
+	z-index: 10;
+	position: absolute;
+	top: 24px;
+	right: 25px;
+	height: 29px;
+	width: 29px;
+	cursor: pointer;
+	&_1 {
+		z-index: 10;
+		display: block;
+		width: 35px;
+		height: 2px;
+		background-color: #000000;
+		transform: rotate(-45deg) translate(-11px, 6px);
+		&:nth-child(2) {
+			transform: rotate(45deg) translate(5px, 9px);
+		}
+	}
+}
+.overlay {
+	position: absolute;
+	width: 100%;
+	z-index: 5;
+	height: 100vh;
+	background-color: #FFFFFF;
+	opacity: 0.7;
+}

@@ -23,4 +23,13 @@
         color: #000000;
         text-align: right;
     }
+    &__link {
+        &:hover {
+            svg {
+                path {
+                    fill: $main-color;
+                }
+            }
+        }
+    }
 }
