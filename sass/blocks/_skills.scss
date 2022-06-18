@@ -1,0 +1,19 @@
+.skills {
+	&__item {
+		padding-left: 60px;
+		position: relative;
+		svg {
+			position: absolute;
+			top: 15px;
+			left: 15px;
+		}
+		&::before {
+			content: '';
+			@include circle;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+}
