@@ -1,0 +1,23 @@
+.expirience {
+    padding-top: 120px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        @include circle;
+        top: 120;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__title {
+        margin-top: 6px;
+        text-align: center;
+    }
+    &__subtitle {
+        margin-top: 6px;
+        text-align: center;
+    }
+    &__divider {
+        margin: 25px auto 60px auto;
+    }
+}
