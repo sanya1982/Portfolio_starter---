@@ -12,8 +12,11 @@
     margin: 0 auto;
     width: 1140px;
 }
-h2, h3 {
+h2, h3, h4 {
     margin: 0;
+    &.title {
+        font-weight: 700;
+    }
 }
 .divider {
     display: block;

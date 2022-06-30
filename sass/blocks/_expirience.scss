@@ -1,23 +1,91 @@
 .expirience {
-    padding-top: 120px;
-    position: relative;
-    &::before {
-        content: '';
-        position: absolute;
-        @include circle;
-        top: 120;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    &__title {
-        margin-top: 6px;
-        text-align: center;
-    }
-    &__subtitle {
-        margin-top: 6px;
-        text-align: center;
-    }
-    &__divider {
-        margin: 25px auto 60px auto;
-    }
+	padding-top: 120px;
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		@include circle;
+		top: 120;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&__title {
+		margin-top: 6px;
+		text-align: center;
+	}
+	&__subtitle {
+		margin-top: 6px;
+		text-align: center;
+	}
+	&__divider {
+		margin: 25px auto 60px auto;
+	}
+	&__wrapper {
+		padding: 60px 80px 0 65px;
+		display: grid;
+		grid-template-columns: repeat(2, 415px);
+		column-gap: 135px;
+	}
+	&__block {
+		&-title {
+			padding-left: 43px;
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				@include circle;
+				width: 15px;
+				height: 15px;
+				bottom: 6px;
+				left: -7.5px;
+			}
+		}
+	}
+	&__set {
+		position: relative;
+		list-style-type: none;
+		&::before {
+			content: '';
+			position: absolute;
+			top: -51px;
+			left: 0px;
+			width: 1px;
+			height: calc(100% + 51px);
+			background-color: #000000;
+		}
+	}
+	&__element {
+		position: relative;
+		&-header {
+			padding-left: 100px;
+			margin-top: 45px;
+		}
+		&-subheader {
+			padding-left: 100px;
+		}
+		&-text{
+			padding-left: 43px;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 15px;
+			height: 1px;
+			width: 43px;
+			background-color: #000000;
+		}
+	}
+	&__img {
+		position: absolute;
+		left:60px;
+		top:12px;
+		&::before {
+			content: '';
+			@include circle;
+			position: absolute;
+			bottom:4px;
+			left: -17px;
+		}
+	}
 }
