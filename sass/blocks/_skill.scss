@@ -1,0 +1,25 @@
+.skill {
+    position: relative;
+    @include circle;
+    &__wrapper {
+        padding: 0 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 270px);
+        gap: 13px;
+    }
+    &__item {
+        border: 1px solid #000000;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__img {
+        height: 65px;
+    }
+    &__text {
+        height: 94px;
+    }
+}

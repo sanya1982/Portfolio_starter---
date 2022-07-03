@@ -23,6 +23,17 @@
         font-size: 48px;
         line-height: 60px;
     }
+    &__title {
+		margin-top: 6px;
+		text-align: center;
+	}
+	&__subtitle {
+		margin-top: 6px;
+		text-align: center;
+	}
+	&__divider {
+		margin: 25px auto 60px auto;
+	}
 }
 h3.title {
     font-weight: 700; 

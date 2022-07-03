@@ -1,27 +1,8 @@
 .expirience {
-	padding-top: 120px;
 	position: relative;
-	&::before {
-		content: '';
-		position: absolute;
-		@include circle;
-		top: 120;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-	&__title {
-		margin-top: 6px;
-		text-align: center;
-	}
-	&__subtitle {
-		margin-top: 6px;
-		text-align: center;
-	}
-	&__divider {
-		margin: 25px auto 60px auto;
-	}
+	@include circle;
 	&__wrapper {
-		padding: 60px 80px 0 65px;
+		padding: 0 80px 0 65px;
 		display: grid;
 		grid-template-columns: repeat(2, 415px);
 		column-gap: 135px;
@@ -30,12 +11,11 @@
 		&-title {
 			padding-left: 43px;
 			position: relative;
+			@include circle;
 			&::before {
-				content: '';
-				position: absolute;
-				@include circle;
 				width: 15px;
 				height: 15px;
+				transform: none;
 				bottom: 6px;
 				left: -7.5px;
 			}
@@ -80,10 +60,9 @@
 		position: absolute;
 		left:60px;
 		top:12px;
+		@include circle;
 		&::before {
-			content: '';
-			@include circle;
-			position: absolute;
+			transform: none;
 			bottom:4px;
 			left: -17px;
 		}

@@ -1,0 +1,62 @@
+.diagrams {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 70px 70px;
+    row-gap: 30px;
+    column-gap: 45px;
+    &__item {
+        padding-top: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__head {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        margin-left: 14px;
+        position: relative;
+        @include circle;
+        &::before {
+            transform: none;
+            left: -14px;
+            top: -8px;
+        }
+    }
+    &__diagram {
+        position: relative;
+        width: 350px;
+        height: 14px;
+        background: #E8E4DE;
+        border-radius: 4px;
+    }
+    &__percent {
+        position: absolute;
+        background-color: $main-color;
+        z-index: 5;
+        height: 100%;
+        border-radius: 4px;
+    }
+}
+#progress1 {
+    width: 100%;
+}
+#progress2 {
+    width: 85%;
+}
+#progress3 {
+    width: 90%;
+}
+#progress4 {
+    width: 75%;
+}
+#progress5 {
+    width: 90%;
+}
+#progress6 {
+    width: 95%;
+}
