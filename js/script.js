@@ -12,3 +12,8 @@ closed.addEventListener('click', () => {
 	menu.classList.remove('active');
 	overlay.classList.remove('active');
 });
+const counters = document.querySelectorAll('.counter'),
+	lines = document.querySelectorAll('#progress');
+counters.forEach((item, i) => {
+	lines[i].style.width = item.innerHTML;
+});
