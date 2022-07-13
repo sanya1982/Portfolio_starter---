@@ -347,9 +347,10 @@
 			<div class="title title__fs36 title__subtitle">Мои работы</div>
 			<div class="divider title__divider"></div>
 			<div class="portfolio__wrapper">
-				<a href="#"><img src="img/works/uber.jpg" alt="uber"></a>
-				<a href="#"><img src="img/works/pulse.jpg" alt="pulse"></a>
-				<a href="#"><img src="img/works/bread.jpg" alt="bread"></a>
+				<a href="#" class="portfolio__img"><img src="img/works/uber.jpg" alt="uber"></a>
+				<!-- <a href="#" class="portfolio__img"><img src="img/works/pulse.jpg" alt="pulse"></a> -->
+				<a href="#" class="portfolio__img"><img src="https://klike.net/uploads/posts/2019-05/1556708032_1.jpg" alt="pulse"></a>
+				<a href="#" class="portfolio__img"><img src="img/works/bread.jpg" alt="bread"></a>
 				<a href="#" class="portfolio__item4"><img src="img/works/plans.jpg" alt="plans"></a>
 				<a href="#"><img src="img/works/ipad.jpg" alt="ipad"></a>
 				<a href="#" class="portfolio__item6"><img src="img/works/mac.jpg" alt="mac"></a>
@@ -413,27 +414,29 @@
 					<h4 class="title title__fs14 contacts__name-text">Или оставьте ваши данные и я сама вам напишу:</h4>
 					<form action="#" class="contacts__form">
 						<div class="contacts__input">
-							<input name="name" type="text">
+							<input required name="name" type="text">
 							<label for="name">Ваше имя</label>
 						</div>
 						<div class="contacts__input">
-							<input name="email" type="email">
+							<input required name="email" type="email">
 							<label for="email">Ваша почта</label>
 						</div>
 						<div class="contacts__input contacts__textarea">
 							<textarea name="textarea" type="text"></textarea>
 							<label for="textarea">Ваше сообщение</label>
 						</div>
-						<div>
+						<div class="contacts__triggers">
 							<input id="submit" type="submit" value="Отправить сообщение">
+							<div class="contacts__policy">
+								<input required type="checkbox">
+								<span>Я согласен(а) с <a href="policy.html" target="_blank">политикой конфиденциальности</a></span>
+							</div>
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
 	</section>
-	
-
 	<script src="js/script.js"></script>
 </body>
 </html>
